@@ -1,0 +1,14 @@
+.restart{
+    font-size: 24px;
+    outline: none;
+    font-weight: 400;
+}
+.text{
+    font-size: 24px;
+    font-weight: 800;
+}
+.game__block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
