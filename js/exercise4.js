@@ -3,12 +3,12 @@
 
 let userDriverCategory = prompt('Enter a driver category A, B or C(wrong letter or number will be replaced to A category): ', 'A').toUpperCase();
 
-
 for (let userCategory of userDriverCategory){
-    userDriverCategory = userCategory.replace(/^[D-Z0-9]/gi,'')
+userDriverCategory+=userCategory
 }
 
-switch (userDriverCategory) {
+
+switch (userDriverCategory.replace(/[D-Z0-9 ]/g, '')[0]) {
     case 'A':
         document.write('You are motorcycle driver')
         break;
