@@ -1,7 +1,12 @@
 // З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль).
 // Вивести на екран назву транспортного засобу, яким він може керувати.
 
-let userDriverCategory = prompt('Enter a driver category A, B or C(wrong letter or number will be replaced to A category): ', 'A').toUpperCase().replace(/^[D-Z0-9]/gi,'A');
+let userDriverCategory = prompt('Enter a driver category A, B or C(wrong letter or number will be replaced to A category): ', 'A').toUpperCase();
+
+
+for (let userCategory of userDriverCategory){
+    userDriverCategory = userCategory.replace(/^[D-Z0-9]/gi,'')
+}
 
 switch (userDriverCategory) {
     case 'A':
