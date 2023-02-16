@@ -5,11 +5,11 @@ let userMonthNumber = parseInt(prompt('Enter a month number: ','1'))
 //Variant with if else
 if (userMonthNumber === 12 || userMonthNumber >= 1 && userMonthNumber <= 2 ){
 document.write("Winter is now <hr>")
-} else if (userMonthNumber >= 3 && userMonthNumber <= 5){
+} else if (userMonthNumber <= 5){
     document.write("Spring is now<hr>")
-} else if (userMonthNumber >= 6 && userMonthNumber <= 8){
+} else if (userMonthNumber <= 8){
 document.write("Summer is now<hr>")
-} else if (userMonthNumber >= 9 && userMonthNumber <= 11){
+} else if (userMonthNumber <= 11){
     document.write("Autumn is now<hr>")
 } else {
     document.write("Wrong month number<hr>")
